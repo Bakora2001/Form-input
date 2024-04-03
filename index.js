@@ -1,17 +1,17 @@
-document.getElementById("gradeForm").addEventListener("submit", function(event) {
+document.getElementById("formInput").addEventListener("submit", function(event) {
     event.preventDefault();
     const score = parseInt(document.getElementById("score").value);
     let grade = '';
-    if (score >= 90) {
-      grade = 'A';
-    } else if (score >= 80) {
-      grade = 'B';
-    } else if (score >= 70) {
-      grade = 'C';
+    if (score >= 70) {
+      gradeMarks = 'A';
     } else if (score >= 60) {
-      grade = 'D';
+      gradeMarks = 'B';
+    } else if (score >= 50) {
+      gradeMarks = 'C';
+    } else if (score >= 40) {
+      gradeMarks = 'D';
     } else {
-      grade = 'E';
+      gradeMarks = 'E';
     }
-    document.getElementById("output").textContent = `Your grade is: ${grade}`;
+    document.getElementById("output").textContent = `My output grade is: ${gradeMarks}`;
   });
