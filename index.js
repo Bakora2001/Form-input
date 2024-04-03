@@ -1,7 +1,8 @@
 document.getElementById("formInput").addEventListener("submit", function(event) {
     event.preventDefault();
     const score = parseInt(document.getElementById("score").value);
-    let grade = '';
+    let gradeMarksclear
+     = '';
     if (score >= 70) {
       gradeMarks = 'A';
     } else if (score >= 60) {
